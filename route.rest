@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/619f516a2520f5c46231069c
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Ravindra Reddy",
+    "subscribedToChannel": "queryravindra.in"
+}
+
+###
+
+PATCH http://localhost:3000/subscribers/619f516a2520f5c46231069c
+Content-Type: application/json
+
+{
+    "name": "Satvik Reddy"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/619f51af2520f5c46231069f
